@@ -1,0 +1,1005 @@
+<html>
+    <head>
+        <link rel="shortcut icon" href="Assets/creux_favicon.png" type=“image/png”>
+        <title>CREUX</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body onload="LoadFunction()">
+        <!--nav and footer-->
+        <div class="nav-ovl"></div>
+        <div class="nav-line"></div>
+        <div class="nav-bump-left" style="background-image: url('assets/topbump-left.svg'); background-size: cover;
+        background-repeat: no-repeat;"></div>
+        <div class="nav-bump-right" style="background-image: url('assets/topbump-right.svg'); background-size: cover;
+        background-repeat: no-repeat;"></div>
+        <div class="center-cont">
+            <div class="nav-logo" style="background-image: url('assets/CREUX_logo_all white_png.png'); background-size: cover;
+            background-repeat: no-repeat;"></div>
+            <div class="nav-socmed">
+                <div class="nav-icon" style="background-image: url('assets/ig.svg'); background-size: cover;
+                background-repeat: no-repeat;" onclick="location='https://www.instagram.com/creuxteam/'"></div>
+                <div class="nav-icon" style="background-image: url('assets/email.svg'); background-size: cover;
+                background-repeat: no-repeat;" onclick="location='https://mail.google.com/mail/u/1/#inbox?compose=CllgCJTJpKVWbxRLHjtPjpwzcZDmnrwmVftmWQTnvhchdfHJZVCFxCdggfdLHlnfwXxjzrBmlRg'"></div>
+                <div class="nav-icon" style="background-image: url('assets/phone.svg'); background-size: cover;
+                background-repeat: no-repeat;" onclick="location='https://api.whatsapp.com/send/?phone=628882926992&text&type=phone_number&app_absent=0'"></div>
+            </div>
+        </div>
+        <!--nav for mobile-->
+        <div class="nav-logo-mobile" style="background-image: url('assets/CREUX_logo_all white_png.png'); background-size: cover;
+        background-repeat: no-repeat;"></div>
+        <div class="nav-socmed-mobile">
+            <div class="nav-icon" style="background-image: url('assets/ig.svg'); background-size: cover;
+            background-repeat: no-repeat;"></div>
+            <div class="nav-icon" style="background-image: url('assets/email.svg'); background-size: cover;
+            background-repeat: no-repeat;"></div>
+            <div class="nav-icon" style="background-image: url('assets/phone.svg'); background-size: cover;
+            background-repeat: no-repeat;"></div>
+        </div>
+
+        <div class="ftr-ovl"></div>
+        <div class="ftr-line"></div>
+        <div class="ftr-bump-left" style="background-image: url('assets/btmbump-left.svg'); background-size: cover;
+        background-repeat: no-repeat;"></div>
+        <div class="ftr-bump-right" style="background-image: url('assets/btmbump-right.svg'); background-size: cover;
+        background-repeat: no-repeat;">
+            <div class="ftr-copyright"></div>
+        </div>
+        <div class="copyright-txt">©Creuxteam</div>
+
+        <!--content-->
+        <div class="bg">
+            <div class="bg-element" style="background-image: url('assets/ornament_single color_cropped.svg'); background-size: cover;
+            background-repeat: no-repeat;"></div>
+            <div class="bg-element2" style="background-image: url('assets/ornament_single color_cropped.svg'); background-size: cover;
+            background-repeat: no-repeat;"></div>
+            <div class="bg-head" style="background-image: url('assets/team_carousel2.jpg'); background-size: cover;
+            background-repeat: no-repeat;">
+                <div class="bg-head-ovl"></div>
+            </div>
+
+            <!--teams-->
+            <div class="teams-ovl"></div>
+            <div class="team-ttl">Teams</div>
+            <div class="team-list-cont">
+                <div id="MLtxt" class="team-txt" onclick="FuctionML()">Mobile Legends</div>
+                <div id="WRtxt" class="team-txt" onclick="FuctionWR()">Wild Rift</div>
+                <div id="FFtxt" class="team-txt" onclick="FuctionFF()">Free Fire</div>
+                <div id="Vtxt" class="team-txt" onclick="FuctionV()">Valorant</div>
+                <div id="PEStxt" class="team-txt" onclick="FuctionPES()">PES</div>
+                <div id="PUBGMtxt" class="team-txt" onclick="FuctionPUBGM()">PUBGM</div>
+            </div>
+            <!--teams for mobile 600px-->
+            <div id="container" class="team-list-cont-mobile">
+                <div class="team-cont-inner">
+                    <div id="MLtxt-m" class="txt-ml" onclick="FuctionML()">Mobile Legends</div>
+                    <div id="WRtxt-m" class="txt-wr" onclick="FuctionWR()">Wild Rift</div>
+                    <div id="FFtxt-m" class="txt-ff" onclick="FuctionFF()">Free Fire</div>
+                    <div id="Vtxt-m" class="txt-v" onclick="FuctionV()">Valorant</div>
+                    <div id="PEStxt-m" class="txt-pes" onclick="FuctionPES()">PES</div>
+                    <div id="PUBGMtxt-m" class="txt-pubgm" onclick="FuctionPUBGM()">PUBGM</div>
+                </div>
+            </div>
+            
+            <div class="team-line"></div>
+            <div id="ML" class="team-cont">
+                <div class="team-inner">
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="WR" class="team-cont">
+                <div class="team-inner">
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="FF" class="team-cont">
+                <div class="team-inner">
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="V" class="team-cont">
+                <div class="team-inner">
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="PES" class="team-cont">
+                <div class="team-inner">
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="PUBGM" class="team-cont">
+                <div class="team-inner">
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                    <div class="team-card">
+                        <div class="img-cont">
+                            <img src="assets/team-photo.png" width="900px" height="1133px" height: alt="">
+                        </div>
+                        <div class="team-card-ovl"></div>
+                        <div class="team-card-black"></div>
+                        <div class="team-card-ttl">Lorem Ipsum</div>
+                        <div class="team-card-aka">AKA Johnatan Doe</div>
+                        <div class="team-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.</div>
+                        <div class="role-ttl">ROLE</div>
+                        <div class="role-txt">MID/CORE</div>
+                        <div class="nat-ttl">NATIONALITY</div>
+                        <div class="nat-logo" style="background-image: url('assets/indo-flag.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="team-card-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                function LoadFunction() {
+                    document.getElementById("ML").style.display = "block";
+                    document.getElementById("WR").style.display = "none";
+                    document.getElementById("FF").style.display = "none";
+                    document.getElementById("V").style.display = "none";
+                    document.getElementById("PES").style.display = "none";
+                    document.getElementById("PUBGM").style.display = "none";
+                    document.getElementById("MLtxt").className = "team-txt active";
+                    document.getElementById("WRtxt").className = "team-txt";
+                    document.getElementById("FFtxt").className = "team-txt";
+                    document.getElementById("Vtxt").className = "team-txt";
+                    document.getElementById("PEStxt").className = "team-txt";
+                    document.getElementById("PUBGMtxt").className = "team-txt";
+                    document.getElementById("MLtxt-m").className = "txt-ml active";
+                    document.getElementById("WRtxt-m").className = "txt-wr";
+                    document.getElementById("FFtxt-m").className = "txt-ff";
+                    document.getElementById("Vtxt-m").className = "txt-v";
+                    document.getElementById("PEStxt-m").className = "txt-pes";
+                    document.getElementById("PUBGMtxt-m").className = "txt-pubgm";
+                }
+
+                function FuctionML() {
+                    document.getElementById("ML").style.display = "block";
+                    document.getElementById("WR").style.display = "none";
+                    document.getElementById("FF").style.display = "none";
+                    document.getElementById("V").style.display = "none";
+                    document.getElementById("PES").style.display = "none";
+                    document.getElementById("PUBGM").style.display = "none";
+                    document.getElementById("MLtxt").className = "team-txt active";
+                    document.getElementById("WRtxt").className = "team-txt";
+                    document.getElementById("FFtxt").className = "team-txt";
+                    document.getElementById("Vtxt").className = "team-txt";
+                    document.getElementById("PEStxt").className = "team-txt";
+                    document.getElementById("PUBGMtxt").className = "team-txt";
+                    document.getElementById("MLtxt-m").className = "txt-ml active";
+                    document.getElementById("WRtxt-m").className = "txt-wr";
+                    document.getElementById("FFtxt-m").className = "txt-ff";
+                    document.getElementById("Vtxt-m").className = "txt-v";
+                    document.getElementById("PEStxt-m").className = "txt-pes";
+                    document.getElementById("PUBGMtxt-m").className = "txt-pubgm";
+                }
+
+                function FuctionWR() {
+                    document.getElementById("ML").style.display = "none";
+                    document.getElementById("WR").style.display = "block";
+                    document.getElementById("FF").style.display = "none";
+                    document.getElementById("V").style.display = "none";
+                    document.getElementById("PES").style.display = "none";
+                    document.getElementById("PUBGM").style.display = "none";
+                    document.getElementById("MLtxt").className = "team-txt";
+                    document.getElementById("WRtxt").className = "team-txt active";
+                    document.getElementById("FFtxt").className = "team-txt";
+                    document.getElementById("Vtxt").className = "team-txt";
+                    document.getElementById("PEStxt").className = "team-txt";
+                    document.getElementById("PUBGMtxt").className = "team-txt";
+                    document.getElementById("MLtxt-m").className = "txt-ml";
+                    document.getElementById("WRtxt-m").className = "txt-wr active";
+                    document.getElementById("FFtxt-m").className = "txt-ff";
+                    document.getElementById("Vtxt-m").className = "txt-v";
+                    document.getElementById("PEStxt-m").className = "txt-pes";
+                    document.getElementById("PUBGMtxt-m").className = "txt-pubgm";
+                }
+
+                function FuctionFF() {
+                    document.getElementById("ML").style.display = "none";
+                    document.getElementById("WR").style.display = "none";
+                    document.getElementById("FF").style.display = "block";
+                    document.getElementById("V").style.display = "none";
+                    document.getElementById("PES").style.display = "none";
+                    document.getElementById("PUBGM").style.display = "none";
+                    document.getElementById("MLtxt").className = "team-txt";
+                    document.getElementById("WRtxt").className = "team-txt";
+                    document.getElementById("FFtxt").className = "team-txt active";
+                    document.getElementById("Vtxt").className = "team-txt";
+                    document.getElementById("PEStxt").className = "team-txt";
+                    document.getElementById("PUBGMtxt").className = "team-txt";
+                    document.getElementById("MLtxt-m").className = "txt-ml";
+                    document.getElementById("WRtxt-m").className = "txt-wr";
+                    document.getElementById("FFtxt-m").className = "txt-ff active";
+                    document.getElementById("Vtxt-m").className = "txt-v";
+                    document.getElementById("PEStxt-m").className = "txt-pes";
+                    document.getElementById("PUBGMtxt-m").className = "txt-pubgm";
+                }
+
+                function FuctionV() {
+                    document.getElementById("ML").style.display = "none";
+                    document.getElementById("WR").style.display = "none";
+                    document.getElementById("FF").style.display = "none";
+                    document.getElementById("V").style.display = "block";
+                    document.getElementById("PES").style.display = "none";
+                    document.getElementById("PUBGM").style.display = "none";
+                    document.getElementById("MLtxt").className = "team-txt";
+                    document.getElementById("WRtxt").className = "team-txt";
+                    document.getElementById("FFtxt").className = "team-txt";
+                    document.getElementById("Vtxt").className = "team-txt active";
+                    document.getElementById("PEStxt").className = "team-txt";
+                    document.getElementById("PUBGMtxt").className = "team-txt";
+                    document.getElementById("MLtxt-m").className = "txt-ml";
+                    document.getElementById("WRtxt-m").className = "txt-wr";
+                    document.getElementById("FFtxt-m").className = "txt-ff";
+                    document.getElementById("Vtxt-m").className = "txt-v active";
+                    document.getElementById("PEStxt-m").className = "txt-pes";
+                    document.getElementById("PUBGMtxt-m").className = "txt-pubgm";
+                }
+
+                function FuctionPES() {
+                    document.getElementById("ML").style.display = "none";
+                    document.getElementById("WR").style.display = "none";
+                    document.getElementById("FF").style.display = "none";
+                    document.getElementById("V").style.display = "none";
+                    document.getElementById("PES").style.display = "block";
+                    document.getElementById("PUBGM").style.display = "none";
+                    document.getElementById("MLtxt").className = "team-txt";
+                    document.getElementById("WRtxt").className = "team-txt";
+                    document.getElementById("FFtxt").className = "team-txt";
+                    document.getElementById("Vtxt").className = "team-txt";
+                    document.getElementById("PEStxt").className = "team-txt active";
+                    document.getElementById("PUBGMtxt").className = "team-txt";
+                    document.getElementById("MLtxt-m").className = "txt-ml";
+                    document.getElementById("WRtxt-m").className = "txt-wr";
+                    document.getElementById("FFtxt-m").className = "txt-ff";
+                    document.getElementById("Vtxt-m").className = "txt-v";
+                    document.getElementById("PEStxt-m").className = "txt-pes active";
+                    document.getElementById("PUBGMtxt-m").className = "txt-pubgm";
+                }
+
+                function FuctionPUBGM() {
+                    document.getElementById("ML").style.display = "none";
+                    document.getElementById("WR").style.display = "none";
+                    document.getElementById("FF").style.display = "none";
+                    document.getElementById("V").style.display = "none";
+                    document.getElementById("PES").style.display = "none";
+                    document.getElementById("PUBGM").style.display = "block";
+                    document.getElementById("MLtxt").className = "team-txt";
+                    document.getElementById("WRtxt").className = "team-txt";
+                    document.getElementById("FFtxt").className = "team-txt";
+                    document.getElementById("Vtxt").className = "team-txt";
+                    document.getElementById("PEStxt").className = "team-txt";
+                    document.getElementById("PUBGMtxt").className = "team-txt active";
+                    document.getElementById("MLtxt-m").className = "txt-ml";
+                    document.getElementById("WRtxt-m").className = "txt-wr";
+                    document.getElementById("FFtxt-m").className = "txt-ff";
+                    document.getElementById("Vtxt-m").className = "txt-v";
+                    document.getElementById("PEStxt-m").className = "txt-pes";
+                    document.getElementById("PUBGMtxt-m").className = "txt-pubgm active";
+                }
+            </script>
+            
+            <!--tour-->
+            <div class="tour-ttl">Nearest Tournament</div>
+            <div class="tour-cont">
+                <div class="tour-inner">
+                    <div class="tour-card">
+                        <div class="tour-card-line"></div>
+                        <div class="tour-card-logo" style="background-image: url('assets/esl-logo-vector.svg'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="tour-logo" style="background-image: url('assets/logo turney.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="tour-card-ttl">Lorem Ipsum</div>
+                        <div class="tour-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.
+                        Sed pulvinar mattis ornare.</div>
+                    </div>
+                    <div class="tour-card">
+                        <div class="tour-card-line"></div>
+                        <div class="tour-card-logo" style="background-image: url('assets/esl-logo-vector.svg'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="tour-logo" style="background-image: url('assets/logo turney.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="tour-card-ttl">Lorem Ipsum</div>
+                        <div class="tour-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.
+                        Sed pulvinar mattis ornare.</div>
+                    </div>
+                    <div class="tour-card">
+                        <div class="tour-card-line"></div>
+                        <div class="tour-card-logo" style="background-image: url('assets/esl-logo-vector.svg'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="tour-logo" style="background-image: url('assets/logo turney.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="tour-card-ttl">Lorem Ipsum</div>
+                        <div class="tour-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.
+                        Sed pulvinar mattis ornare.</div>
+                    </div>
+                    <div class="tour-card">
+                        <div class="tour-card-line"></div>
+                        <div class="tour-card-logo" style="background-image: url('assets/esl-logo-vector.svg'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="tour-logo" style="background-image: url('assets/logo turney.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="tour-card-ttl">Lorem Ipsum</div>
+                        <div class="tour-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.
+                        Sed pulvinar mattis ornare.</div>
+                    </div>
+                    <div class="tour-card">
+                        <div class="tour-card-line"></div>
+                        <div class="tour-card-logo" style="background-image: url('assets/esl-logo-vector.svg'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="tour-logo" style="background-image: url('assets/logo turney.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="tour-card-ttl">Lorem Ipsum</div>
+                        <div class="tour-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.
+                        Sed pulvinar mattis ornare.</div>
+                    </div>
+                    <div class="tour-card">
+                        <div class="tour-card-line"></div>
+                        <div class="tour-card-logo" style="background-image: url('assets/esl-logo-vector.svg'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="tour-logo" style="background-image: url('assets/logo turney.png'); background-size: cover;
+                        background-repeat: no-repeat;"></div>
+                        <div class="tour-card-ttl">Lorem Ipsum</div>
+                        <div class="tour-card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec nunc ligula, finibus eu est id, ornare sollicitudin urna.
+                        Sed pulvinar mattis ornare.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--about-->
+            <div class="about-ttl">Lorem Ipsum</div>
+            <div class="about-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            viverra, justo et rutrum pellentesque, mauris ligula maximus
+            erat, ut consequat quam ex quis risus. Vivamus facilisis dolor
+            nisi, in lobortis arcu condimentum ut. Vestibulum eu dui ex.
+            Curabitur in aliquet ligula.</div>
+            <div class="sponsor-ttl">Sponsor</div>
+            <div class="sponsor-logo" style="background-image: url('assets/sekolahdesain-logo-vector.svg'); background-size: cover;
+            background-repeat: no-repeat;"></div>
+        </div>
+
+        <!-- horizontal scroll -->
+        <script>
+            const scrollContainer1 = document.querySelector("#ML");
+            const scrollContainer2 = document.querySelector("#WR");
+            const scrollContainer3 = document.querySelector("#FF");
+            const scrollContainer4 = document.querySelector("#V");
+            const scrollContainer5 = document.querySelector("#PES");
+            const scrollContainer6 = document.querySelector("#PUBGM");
+            const scrollContainer7 = document.querySelector(".tour-cont");
+
+            [scrollContainer1, scrollContainer2,
+            scrollContainer3, scrollContainer4,
+            scrollContainer5, scrollContainer6,
+            scrollContainer7].forEach((scrollContainer)=>{
+                    scrollContainer.addEventListener("wheel", (evt) => {
+                    evt.preventDefault();
+                    scrollContainer.scrollLeft += evt.deltaY;
+                })
+            });
+        </script>
+
+        <!-- <script>
+            const scrollContainer1 = document.querySelector("#ML");
+            const scrollContainer2 = document.querySelector("#WR");
+            const scrollContainer3 = document.querySelector("#FF");
+            const scrollContainer4 = document.querySelector("#V");
+            const scrollContainer5 = document.querySelector("#PES");
+            const scrollContainer6 = document.querySelector("#PUBGM");
+            const scrollContainer7 = document.querySelector(".tour-cont");
+            const scrollContainer8 = document.querySelector(".team-list-cont-mobile");
+
+            [scrollContainer1, scrollContainer2,
+            scrollContainer3, scrollContainer4,
+            scrollContainer5, scrollContainer6,
+            scrollContainer7, scrollContainer8].forEach((scrollContainer)=>{
+                    scrollContainer.addEventListener("wheel", (evt) => {
+                    evt.preventDefault();
+                    if (window.innerWidth < 450) {
+                        scrollContainer.scrollDown += evt.deltaX;
+                    }
+                    else {
+                        scrollContainer.scrollLeft += evt.deltaY;
+                    }
+                })
+            });
+        </script> -->
+    </body>
+</html>
